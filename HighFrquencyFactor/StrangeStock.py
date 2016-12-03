@@ -35,3 +35,4 @@ def Strange(stocks,date):  #We still need to furthur adjust this factor by buyin
         t  = pd.DataFrame(lam, index = [stock])
         AllRes = pd.concat([AllRes,t])   
     return AllRes
+#Buy these stocks when the market is bad but they perform well
