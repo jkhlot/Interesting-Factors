@@ -35,7 +35,8 @@ def Strange(stocks,date):  #We still need to furthur adjust this factor by buyin
             except:
                 continue
             t  = pd.DataFrame(lam, index = [stock])
-            AllRes = pd.concat([AllRes,t])   
+            AllRes = pd.concat([AllRes,t])
+            AllRes = pd.Series(AllRes)
         return AllRes
     else:
         return ['002195.XSHE']
