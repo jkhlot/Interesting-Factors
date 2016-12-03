@@ -19,5 +19,5 @@ def SmartMoney(stocks,date):  #We still need to furthur adjust this factor by bu
         #print(Q)
         AllRes.append(Q)
         indstocks.append(stock)
-    AllRespd = pd.DataFrame(AllRes,index = indstocks)
+    AllRespd = pd.Series(AllRes,index = indstocks)
     return AllRespd
